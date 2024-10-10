@@ -4,127 +4,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Estilos CSS-->
-    <link rel="stylesheet" href="estilos/estilos.CSS">
-    <link rel="stylesheet" href="estilos/min.css">
+    <!--CSS-->
+    <link rel="stylesheet" href="estilos/base.css">
+    <link rel="stylesheet" href="estilos/main.css">
     <link rel="stylesheet" href="estilos/vendor.css">
-    <link rel="stylesheet" href="estilos/font-awesome.css">
-    <!--Java Script-->
+    <link rel="stylesheet" href="estilos/font-awesome/css/fontawesome-all.css">
+    <!--JavaScript
+    ===================================================-->
     <script src="js/modernizr.js"></script>
     <script src="js/pace.min.js"></script>
 
-    <!--Favicon Icono de la pestaña=========================-->
+    <!--Favicon - tab icon
+    ===================================================-->
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_portafolio_32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_protafolio16x16.png">
     <title>Portafolio</title>
 </head>
 
 <body id="top">
-
-    <!--vista de carga/loading-->
-    <div id="preload">
+    <!--loading view o loading-->
+    <div id="preloader">
         <div id="loader"></div>
     </div>
-
-    <!--Empezamos con el header-->
+    <!--We start with the header
+    ====================================================-->
     <header class="s-header">
         <div class="header-logo">
-            <a href="index.html" class="site-logo"></a>
-            <img src="imagenes/logo.svg" alt="HomePage">
+            <a href="index.html" class="site-logo">
+                <img src="img/logo.svg" alt="Homepage">
+            </a>
         </div>
-    </header>
-    <header class="s-header">
+        <!--navigation bar
+        =================================================-->
         <nav class="header-nav-wrap">
             <ul class="header-main-nav">
-                <li><a href="#about" title="About" class="smoothscroll"> About Us</a></li>
-                <li><a href="#services" title="Services" class="smoothscroll">Services</a></li>
-                <li><a href="works" title="Works" class="smoothscroll">Works</a></li>
-                <li><a href="#contacts" title="contact us" class="smoothscroll">Contact Us</a></li>
+                <li class="current"><a href="#intro" class="smoothscroll" title="intro">Introduction</a></li>
+                <li><a href="#about" title="about" class="smoothscroll">About</a></li>
+                <li><a href="#services" title="services" class="smoothscroll">Services</a></li>
+                <li><a href="#works" title="works" class="smoothscroll">Works</a></li>
+                <li><a href="#contact" title="contact us" class="smoothscroll">Contact</a></li>
             </ul>
-            <!--Creamos una lista desordenada para Redes Sociales/Social Media-->
+
+            <!--We created an unordered list for social media
+            ======================================-->
             <ul class="header-social">
-                <li><a href="#0"></a><i class="fab fa-facebook" aria-hidden="true"></i> </li>
-                <li><a href="#1"></a> <i class="fab fa-twitter" aria-hidden="true"></i></li>
-                <li><a href="#2"></a> <i class="fab fa-instagram" aria-hidden="true"></i> </li>
-                <li><a href="#3"></a> <i class="fab fa-youtube" aria-hidden="true"></i> </li>
+                <li><a href="#0"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="#1"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#2"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
+                <li><a href="#3"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
             </ul>
         </nav>
         <a href="#" class="header-menu-toggle"><span>Menu</span></a>
-    </header><!--Fin del Header-->
-    <!--Introduccion-->
+    </header><!--End the header-->
+
+    <!--Introduction
+    ===============================================-->
     <section id="intro" class="s-intro target-section">
         <div class="row intro-content">
-            <div class="colum large-9 mob-full intro-text">
-                <h3>Hola, mi nombre es Erick Mejía</h3>
+            <div class="column large-9 mob-full intro-text">
+                <h3>Hola, Mi nombre es Erick Mejia</h3>
                 <h1>
                     Desarrollador Web <br>
-                    Desarrollador Movil <br>
-                    Experto en IA <br>
+                    Desarrolladores Móviles <br>
+                    Expertos en IA
                 </h1>
             </div>
             <div class="intro-scroll">
                 <a href="#about" class="intro-scroll-link smoothscroll">
-                    Presiona para mas
+                    Presiona para más
                 </a>
+
             </div>
-        </div>
-    </section>
-</body id="top">
+            <div class="intro-grid"></div>
+            <div class="intro-pic"></div>
+
+        </div><!--end row-->
+    </section><!--end intro-->
+
+    <!--about
+    ==========================================================-->
     <section id="about" class="s-about target-section">
-        <div class="about-experience">
+        <div class="about-me">
             <div class="row heading-block">
-            </div>
-        </div>
-        <div class="row about-experience__timeline">
-            <div class="column large-half tab-full">
-                <div class="timeline">
-                    <div class="timeline_icon-wrap">
-                        <span class="timeline_icon timeline_icon-work"></span>
-                        <div class="time_block">
-                        </div>
-                    </div>
+                <div class="column large-full">
+                    <h2 class="section-heading">About me</h2>
                 </div>
             </div>
-        </div>
-    </section>
-    <section id="about" class="s-about target section">
-        <div class="about-me">
-            <div class="row about-me"__content>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Corrupti beatae minus repellendus nam aut rem tempore quia corporis sequi, natus labore. 
-                    Similique voluptas aperiam incidunt ducimus tenetur atque iusto consectetur.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione laboriosam rem optio saepe pariatur. 
-                    Modi quisquam delectus provident aliquam reprehenderit asperiores, assumenda iste unde ut veniam commodi. 
-                    Voluptates, nihil ex.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Deleniti qui voluptas perferendis quisquam recusandae, illo facilis natus enim. 
-                    Eligendi deserunt laboriosam beatae optio animi obcaecati quas non, nesciunt debitis corrupti.
-                </p>
-            </div>
-        </div>
-        <div class="row about-me__buttons">
-            <div class="column large-half tab-full">
-                <a href="#" class="btn btn--stroke full-width">Hire Me</a>
-            </div>
-        </div>
-        <div class="column large-half tab-full">
-            <a href="#" class="btn btn--primary full-width">Download CV</a>
-        </div> <!--End About-->
+            <div class="row about-me__content">
+                <div class="column large-full about-me__text">
+                    <p class="lead">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Velit vero sint deserunt vitae amet illum praesentium alias. 
+                        Ut provident quisquam, amet aspernatur error voluptatum praesentium repellat veritatis repudiandae dolores ex!
+                    </p>
 
-        <!--Experience-->
+                    <p>
+                      
+
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Commodi quas, ea dolore repellendus atque facere vel dolores molestiae tempora consequuntur impedit odio incidunt amet.
+                        Est optio tempore explicabo tempora reiciendis.
+                    </p>
+                </div>
+
+            </div>
+            <div class="row about-me__buttons">
+                <div class="column large-half tab-full">
+                    <a href="#" class="btn btn--stroke full-width">Hire Me</a>
+                </div>
+                <div class="column large-half tab-full">
+                    <a href="#" class="btn btn--primary full-width">Dowload CV</a>
+                </div>
+            </div>
+        </div><!--End about me -->
+        <!--About experience-->
+        <!--Heading-->
         <div class="about-experience">
             <div class="row heading-block">
                 <div class="column large-full">
-                    <h2 class="section-heading"> Work & Education</h2>
+                    <h2 class="section-heading">Work & Education</h2>
                 </div>
             </div>
-        </div>
+        </div><!--end about experience-->
+
+    </section><!-- end s-about-->
     </section>
-    </html>
+
+<!--end section-->
+<!--end body-->
+</body>
+
+</html>

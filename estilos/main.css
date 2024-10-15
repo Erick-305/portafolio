@@ -47,3 +47,56 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
     margin-top: 6rem;
     margin-bottom: 16rem;
 }
+/*Estilos del Header*/
+.s-header{
+    position: absolute;
+    top: 2rem;
+    left: 0;
+    width: 100%;
+    border: 1px solid white;
+    height: 78px;
+    text-align: center;
+}
+.s-header.sticky{
+    background: #050505;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.s-header-logo{
+    display: inline-block;
+    margin: 6px 0 0 0;
+    position: absolute;
+    top: 50%;
+    left: 40px;
+}
+.s-header-logo a{
+    display: block;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: none;
+    transition: all .3s;
+}
+.s-header-logo img{
+    width: 132px;
+    height: 36px;
+    margin: 0;
+}
+.header-nav-wrap{
+    display: inline-block;
+}
+.header-nav-wrap ul {
+    display: inline-block;
+    list-style: none;
+    margin-left: 0;
+    margin-top: 18px;
+}
+.header-nav-wrap li {
+    display: inline-block;
+    padding-left: 0;
+}
+.header-nav-wrap li a {
+    display: block;
+    line-height: calc(78px-(18px*2))
+}

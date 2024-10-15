@@ -49,54 +49,83 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 }
 /*Estilos del Header*/
 .s-header{
+    /*posicionamiento absoluto del header*/
     position: absolute;
+    /*2 rem desde la parte supeior*/
     top: 2rem;
+    /*alineo a la izquierda del contenedor*/
     left: 0;
+    /*ancho del contenedor*/
     width: 100%;
+    /*borde blanco de 1 px*/
     border: 1px solid white;
+    /*altura del header de 78px*/
     height: 78px;
+    /*centrar el texto*/
     text-align: center;
 }
 .s-header.sticky{
+    /*fondo negro cuando el header es fijo*/
     background: #050505;
+    /*header fijado en la parte superior cuando desplazamos la pag*/
     position: fixed;
     top: 0;
     left: 0;
 }
 .s-header-logo{
+    /*se muestra en linea el logo con los otros elementos*/
     display: inline-block;
+    /*margen de 6px*/
     margin: 6px 0 0 0;
+    /*poisicion absoluta dentro del header*/
     position: absolute;
+    /*centro del logo con 50% de altura de contenedor*/
     top: 50%;
+    /*el logo se coloca en el borde izquierdo del header a 40px*/
     left: 40px;
 }
 .s-header-logo a{
+    /*enlace del logo*/
     display: block;
+    /*margenes y relleno*/
     margin: 0;
     padding: 0;
+    /*Borde*/
     outline: 0;
     border: none;
+    /*tansicion suave en .3s en el enlace*/
     transition: all .3s;
 }
 .s-header-logo img{
+    /*tamaño del logo*/
     width: 132px;
     height: 36px;
+    /*margenes*/
     margin: 0;
 }
 .header-nav-wrap{
+    /*contenedor de naavegacion*/
     display: inline-block;
 }
 .header-nav-wrap ul {
+    /*lista de navegacion*/
     display: inline-block;
+    /*estilo de lista*/
     list-style: none;
+    /*margen izquierdo*/
     margin-left: 0;
+    /*margen superior*/
     margin-top: 18px;
 }
 .header-nav-wrap li {
+    /*elementos de la lista*/
     display: inline-block;
+    /*relleno izquierda*/
     padding-left: 0;
 }
 .header-nav-wrap li a {
+    /*enlace de bloque */
     display: block;
+    /*altura calculada*/
     line-height: calc(78px-(18px*2))
 }

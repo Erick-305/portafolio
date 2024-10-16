@@ -37,15 +37,50 @@ a:active {
     outline: 0;
 }
 /*tipografia*/
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5,.h6{
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6, 
+.h1, 
+.h2, 
+.h3, 
+.h4, 
+.h5,
+.h6{
     font-family: "Frank Ruh1 libre", serif;
     font-weight: 500;
     font-size: normal;
     color: #ffff;
 }
-h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
+h1, 
+.h1, 
+h2, 
+.h2, 
+h3, 
+.h3, 
+h4, 
+.h4 {
     margin-top: 6rem;
     margin-bottom: 16rem;
+}
+@media screen and (max-width:600px) {
+
+    h1,
+    .h1,
+    h2,
+    .h2,
+    h3,
+    .h3,
+    h4,
+    .h4 {
+        margin-top: 6rem;
+    }
+}
+h5, .h5, h6, .h6{
+    margin-top: 4.8rem;
+    margin-bottom: 1.2rem;
 }
 /*Estilos del Header*/
 .s-header{
@@ -99,4 +134,45 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 .header-nav-wrap li a {
     display: block;
     line-height: calc(78px-(18px*2))
+}
+.header-main-nav{
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 0 0 0 4px;
+    z-index: 2;
+    position: static;
+}
+.header-main-nav li{
+    margin: 0 2rem;
+}
+.header-main-nav a{
+    color: rgba(255, 255, 255, 0.5);
+    position: relative;
+}
+.header-main-nav a:hover,
+.header-main-nav a:focus,
+.header-main-nav a:active{
+    color: #ffffff;
+}
+.header-main-nav .current a{
+    color: #ffffff;
+}
+.header-social{
+    font-size: 2rem;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: 40px;
+}
+.header-social{
+    margin-right: 1rem;
+}
+.header-social li:last-child{
+    margin-right: 0;
+}
+.header-social li a{
+    color: rgba(255, 255, 255, 0.5);
 }
